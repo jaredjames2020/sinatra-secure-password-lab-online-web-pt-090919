@@ -40,9 +40,6 @@ class ApplicationController < Sinatra::Base
   post "/login" do
     ##your code here
     binding.pry
-    @user = User.find(session[:user_id])
-    # if params
-    # user_id
   end
 
   get "/failure" do
