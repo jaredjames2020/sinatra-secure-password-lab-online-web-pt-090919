@@ -40,6 +40,8 @@ class ApplicationController < Sinatra::Base
   post "/login" do
     ##your code here
     binding.pry
+    if params[:username].empty? || params[:password].empty?
+      redirect to '/failure'
   end
 
   get "/failure" do
