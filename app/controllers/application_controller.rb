@@ -39,7 +39,7 @@ class ApplicationController < Sinatra::Base
 
   post "/login" do
     ##your code here
-    user = User.new(username: params[:username], password: params[:password])
+    # user = User.new(username: params[:username], password: params[:password])
     binding.pry
     if user
       session[:user_id] = user.id
